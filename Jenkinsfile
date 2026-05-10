@@ -30,7 +30,7 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh 'java -cp target/test-classes:target/classes com.example.AppTest'
+                sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
             }
         }
     }
