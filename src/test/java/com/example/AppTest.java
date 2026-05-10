@@ -14,7 +14,7 @@ public class AppTest extends TestCase {
                 "/usr/bin/chromedriver");
 
         ChromeOptions options = new ChromeOptions();
-
+	options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
 
